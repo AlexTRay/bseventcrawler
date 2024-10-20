@@ -1,0 +1,441 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  .collapsible {
+    background-color: #000;
+    color: #ff4081;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+  }
+  .active, .collapsible:hover {
+    background-color: #444;
+  }
+  .content {
+    padding: 0 15px;
+    display: block;
+    overflow: hidden;
+    background-color: #1e1e1e;
+  }
+  table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    table-layout: fixed;  /* Ermöglicht flexiblere Darstellung der Spalten */
+  }
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+    white-space: normal;  /* Normaler Textumbruch */
+    overflow-wrap: break-word; /* Umbruch innerhalb der Zellen */
+  }
+  th {
+    background-color: #000;
+    color: #ff4081;
+  }
+  td:nth-child(4) { /* Preis-Spalte */
+    width: 20%; /* Feste Breite für die Preisspalte, um Platz sicherzustellen */
+    white-space: nowrap; /* Verhindert das Abschneiden des Preises */
+  }
+  tr:hover {
+    background-color: #333;
+  }
+  a {
+    color: #82b1ff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var coll = document.getElementsByClassName("collapsible");
+      for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; color: #ff4081;">Backstage Events</h1>
+<button class='collapsible'>Oktober 24</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>20.10.24</td><td><a href='https://backstage.eu/thomas-godoj-endlos-furchtlos-tour-2024.html'>THOMAS GODOJ - Endlos Furchtlos Tour 2024</a></td><td>Rock</td><td>33,90 €</td></tr>
+<tr><td>20.10.24</td><td><a href='https://backstage.eu/imminence-the-black-tour-2024.html'>IMMINENCE - THE BLACK TOUR 2024 | ausverkauft</a></td><td>Metalcore</td><td>38,40 €</td></tr>
+<tr><td>20.10.24</td><td><a href='https://backstage.eu/t-low-litty-way-tour-2024.html'>T-LOW - LITTY-WAY TOUR 2024</a></td><td>Rap</td><td>39,90 €</td></tr>
+<tr><td>20.10.24</td><td><a href='https://backstage.eu/gutalax-15th-anniversary-tour-2024.html'>GUTALAX - 15th Anniversary Tour 2025 | verlegt auf den 19.01.25</a></td><td>Gore 'n' Roll</td><td>25,80 €</td></tr>
+<tr><td>21.10.24</td><td><a href='https://backstage.eu/vinta-live-2024.html'>VINTA - Live 2024</a></td><td>Rock</td><td>19,20 €</td></tr>
+<tr><td>21.10.24</td><td><a href='https://backstage.eu/samu-haber-club-tour-2024.html'>SAMU HABER - CLUB TOUR 2024 | ausverkauft</a></td><td>Rock</td><td>57,00 €</td></tr>
+<tr><td>21.10.24</td><td><a href='https://backstage.eu/fourty-kein-abitour-24.html'>FOURTY - KEIN ABITOUR ’24 | verlegt auf den 21.10.24</a></td><td>Rap</td><td>23,00 €</td></tr>
+<tr><td>22.10.24</td><td><a href='https://backstage.eu/ness-tour-2024.html'>NESS - Tour 2024</a></td><td>Pop</td><td>25,00 €</td></tr>
+<tr><td>23.10.24</td><td><a href='https://backstage.eu/zeke-european-tour-2024.html'>ZEKE - European Tour 2024</a></td><td>Punk’n’Roll</td><td>21,40 €</td></tr>
+<tr><td>23.10.24</td><td><a href='https://backstage.eu/randy-hansen-a-tribute-to-jimi-hendrix-european-tour-2024.html'>RANDY HANSEN - A tribute to Jimi Hendrix - European Tour 2024</a></td><td>Rock</td><td>29,10 €</td></tr>
+<tr><td>23.10.24</td><td><a href='https://backstage.eu/camouflage-rewind-to-the-future-and-goodbye-live-2023.html'>CAMOUFLAGE - REWIND TO THE FUTURE AND GOODBYE LIVE | verlegt auf den 23.10.24</a></td><td>Synth Pop</td><td>44,10 €</td></tr>
+<tr><td>24.10.24</td><td><a href='https://backstage.eu/stepfather-fred-rubicon-tour-2024.html'>STEPFATHER FRED - Rubicon Tour 2024</a></td><td>Heavy Alternative Rock</td><td>19,20 €</td></tr>
+<tr><td>24.10.24</td><td><a href='https://backstage.eu/health-rat-based-warfare-tour-the-old-world.html'>HEALTH - Rat-based Warfare Tour: The Old World</a></td><td>Rock</td><td>33,70 €</td></tr>
+<tr><td>24.10.24</td><td><a href='https://backstage.eu/mia-hellsehen-tour-2024.html'>MiA. - Hellsehen-Tour 2024</a></td><td>Elektropop</td><td>41,70 €</td></tr>
+<tr><td>25.10.24</td><td><a href='https://backstage.eu/bradley-simpson-live-2024.html'>BRADLEY SIMPSON - Live 2024</a></td><td>Rock</td><td>25,00 €</td></tr>
+<tr><td>25.10.24</td><td><a href='https://backstage.eu/thrash-metal-conviction-2024.html'>THRASH METAL CONVICTION 2024</a></td><td>Thrash Metal</td><td>15,00 €</td></tr>
+<tr><td>25.10.24</td><td><a href='https://backstage.eu/front-242-black-out-farewell-tour-2024.html'>FRONT 242 - "Black out - The final shows"</a></td><td>EBM</td><td>42,00 €</td></tr>
+<tr><td>26.10.24</td><td><a href='https://backstage.eu/black-tusk-lord-dying-2024-european-co-headline-tour.html'>BLACK TUSK + LORD DYING - 2024 EUROPEAN CO-HEADLINE TOUR</a></td><td>Sludge</td><td>22,50 €</td></tr>
+<tr><td>26.10.24</td><td><a href='https://backstage.eu/varg-wolfsfest-2024.html'>VARG - WOLFSFEST 2024</a></td><td>Metal</td><td>39,70 €</td></tr>
+<tr><td>26.10.24</td><td><a href='https://backstage.eu/dennis-dies-das-tour-2024.html'>DENNIS DIES DAS - RAP RAVE GTS Tour 2024</a></td><td>Rap</td><td>31,30 €</td></tr>
+<tr><td>27.10.24</td><td><a href='https://backstage.eu/tanzwut-live-2024.html'>TANZWUT - Achtung Mensch! Tour 2024</a></td><td>Mittelalter Rock</td><td>35,50 €</td></tr>
+<tr><td>27.10.24</td><td><a href='https://backstage.eu/h-blockx-time-to-move-anniversary-tour-2024.html'>H-BLOCKX - Time To Move Anniversary - Tour 2024 | ausverkauft</a></td><td>Crossover</td><td>40,00 €</td></tr>
+<tr><td>28.10.24</td><td><a href='https://backstage.eu/avaion-for-the-vibes-fall-tour-2024.html'>AVAION - For The Vibes - Fall Tour 2024</a></td><td>Pop, Elektro</td><td>29,00 €</td></tr>
+<tr><td>29.10.24</td><td><a href='https://backstage.eu/the-brew-uk-20-years-anniversary-tour-2024.html'>THE BREW (UK) - "20 years anniversary" tour 2024</a></td><td>Rock</td><td>31,10 €</td></tr>
+<tr><td>29.10.24</td><td><a href='https://backstage.eu/blowing-doozy-i-m-good-tour-2024.html'>BLOWING DOOZY - I’m Good Tour 2024</a></td><td>Pop Brass</td><td>22,00 €</td></tr>
+<tr><td>30.10.24</td><td><a href='https://backstage.eu/frank-carter-the-rattlesnakes-live-2024.html'>FRANK CARTER & THE RATTLESNAKES - Live 2024</a></td><td>Rock</td><td>28,00 €</td></tr>
+<tr><td>30.10.24</td><td><a href='https://backstage.eu/guilt-trip-live-2024.html'>GUILT TRIP - Live 2024</a></td><td>Hardcore, Metal</td><td>25,80 €</td></tr>
+<tr><td>30.10.24</td><td><a href='https://backstage.eu/septicflesh-headliner-tour-2024.html'>SEPTICFLESH - Headliner Tour 2024</a></td><td>Death Metal, Gothic</td><td>38,30 €</td></tr></table></div><button class='collapsible'>November 24</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>02.11.24</td><td><a href='https://backstage.eu/alien-ant-farm-cky-live-2024.html'>ALIEN ANT FARM & CKY - LIVE 2024</a></td><td>Rock</td><td>41,70 €</td></tr>
+<tr><td>02.11.24</td><td><a href='https://backstage.eu/tom-walker-live-2024.html'>TOM WALKER - Live 2024 | ausverkauft</a></td><td>Rock</td><td>34,00 €</td></tr>
+<tr><td>02.11.24</td><td><a href='https://backstage.eu/planlos-taschen-voller-gluck-tour.html'>PLANLOS - Taschen voller Glück Tour</a></td><td>Punkrock</td><td>28,00 €</td></tr>
+<tr><td>03.11.24</td><td><a href='https://backstage.eu/paceshifters-out-and-outer-tour.html'>PACESHIFTERS - Out-And-Outer Tour | abgesagt</a></td><td>Rock</td><td>22,50 €</td></tr>
+<tr><td>03.11.24</td><td><a href='https://backstage.eu/25-jahre-asp-die-zusammenkunft-3.html'>25 JAHRE ASP - DIE ZUSAMMENKUNFT 3</a></td><td>Rock</td><td>48,35 €</td></tr>
+<tr><td>04.11.24</td><td><a href='https://backstage.eu/one-morning-left-buy-tickets-for-this-tour-2024.html'>ONE MORNING LEFT - BUY TICKETS FOR THIS TOUR 2024</a></td><td>Metalcore</td><td>23,50 €</td></tr>
+<tr><td>04.11.24</td><td><a href='https://backstage.eu/nestor-the-teenage-rebel-tour.html'>NESTOR - THE TEENAGE REBEL TOUR</a></td><td>Rock</td><td>28,00 €</td></tr>
+<tr><td>05.11.24</td><td><a href='https://backstage.eu/gianni-suave-gift-tour-2024.html'>GIANNI SUAVE - Gift Tour 2025 | verlegt auf den 19.03.25</a></td><td>HipHop</td><td>29,99 €</td></tr>
+<tr><td>05.11.24</td><td><a href='https://backstage.eu/geoff-tate-the-big-rock-show-tour-2024.html'>GEOFF TATE - The Big Rock Show Tour 2024</a></td><td>Rock</td><td>42,80 €</td></tr>
+<tr><td>05.11.24</td><td><a href='https://backstage.eu/scala-kolacny-brothers-gloaming.html'>Scala & Kolacny Brothers - Gloaming</a></td><td>Frauenchor, Pop, Rock</td><td>46,75 €</td></tr>
+<tr><td>06.11.24</td><td><a href='https://backstage.eu/brothers-of-metal-fimbulwin-tour-2024.html'>BROTHERS OF METAL - FimbulwinTour 2024</a></td><td>Power Metal</td><td>33,50 €</td></tr>
+<tr><td>06.11.24</td><td><a href='https://backstage.eu/draconian-30th-anniversary-tour.html'>DRACONIAN - 30TH ANNIVERSARY TOUR</a></td><td>Goth, Metal, Death, Doom</td><td>33,50 €</td></tr>
+<tr><td>07.11.24</td><td><a href='https://backstage.eu/dark-tranquility-endtime-signals-european-tour-2024.html'>DARK TRANQUILLITY - ENDTIME SIGNALS EUROPEAN TOUR 2024</a></td><td>Melodic Death Metal</td><td>43,00 €</td></tr>
+<tr><td>07.11.24</td><td><a href='https://backstage.eu/kasi-kasi-fahrt-auf-tour-2024.html'>KASI - Kasi fährt auf Tour 2024 | ausverkauft</a></td><td>Indiepop</td><td>25,00 €</td></tr>
+<tr><td>08.11.24</td><td><a href='https://backstage.eu/gola-gianni-dog-talk-tour-2024.html'>Gola Gianni - Dog Talk Tour 2024</a></td><td>Rap</td><td>27,60 €</td></tr>
+<tr><td>08.11.24</td><td><a href='https://backstage.eu/gatecreeper-dark-superstition-european-tour-2024.html'>GATECREEPER - DARK SUPERSTITION EUROPEAN TOUR 2024</a></td><td>Death Metal</td><td>30,20 €</td></tr>
+<tr><td>08.11.24</td><td><a href='https://backstage.eu/dritte-wahl-urlaub-in-der-bredouille.html'>DRITTE WAHL - Urlaub in der Bredouille</a></td><td>Rock</td><td>39,70 €</td></tr>
+<tr><td>09.11.24</td><td><a href='https://backstage.eu/snash-good-vibes-tour.html'>SNASH - Good Vibes Tour</a></td><td>unheard cover mashup</td><td>10,00 €</td></tr>
+<tr><td>09.11.24</td><td><a href='https://backstage.eu/mr-hurley-die-pulveraffen-ye-banished-privateers-live-24.html'>Mr.Hurley und die Pulveraffen - 15 JAHRE AGGRO SHANTY</a></td><td>Folk Rock</td><td>47,20 €</td></tr>
+<tr><td>09.11.24</td><td><a href='https://backstage.eu/los-brudalos-live-2024.html'>LOS BRUDALOS - Live 2024</a></td><td>Rap</td><td>25,80 €</td></tr>
+<tr><td>09.11.24</td><td><a href='https://backstage.eu/fenzl-band-live-2024.html'>FENZL & BAND - Live 2024 | verlegt auf den 23.11.24</a></td><td>Rock</td><td>26,90 €</td></tr>
+<tr><td>09.11.24</td><td><a href='https://backstage.eu/kalapi-heimspiel-im-backstage-munchen.html'>Kalapi - Heimspiel im Backstage München | abgesagt</a></td><td>Punk, Rock</td><td>20,00 €</td></tr>
+<tr><td>10.11.24</td><td><a href='https://backstage.eu/faces-of-death-tour-2024.html'>FACES OF DEATH TOUR 2024</a></td><td>Deathcore, Metalcore</td><td>34,70 €</td></tr>
+<tr><td>10.11.24</td><td><a href='https://backstage.eu/palace-live-2024.html'>PALACE - Live 2024</a></td><td>Rock</td><td>30,00 €</td></tr>
+<tr><td>10.11.24</td><td><a href='https://backstage.eu/tir-nan-og-tour-2024-gateway-to-the-otherworld.html'>TIR NAN OG - Tour 2024 - Gateway To The Otherworld</a></td><td>Folk Rock</td><td>22,50 €</td></tr>
+<tr><td>11.11.24</td><td><a href='https://backstage.eu/nizi19-akh-krach-tour-2024.html'>NIZI19 - AKH & KRACH TOUR 2024</a></td><td>Rap</td><td>34,95 €</td></tr>
+<tr><td>11.11.24</td><td><a href='https://backstage.eu/kayef-live-2024.html'>KAYEF - Live 2024</a></td><td>Pop, Rap</td><td>42,35 €</td></tr>
+<tr><td>12.11.24</td><td><a href='https://backstage.eu/sil3a-tour-2024.html'>SIL3A - Tour 2024 | abgesagt</a></td><td>Rap</td><td>30,20 €</td></tr>
+<tr><td>12.11.24</td><td><a href='https://backstage.eu/accept-humanoid-tour-2024.html'>ACCEPT - HUMANOID TOUR 2024 | ausverkauft</a></td><td>Heavy Metal</td><td>56,20 €</td></tr>
+<tr><td>13.11.24</td><td><a href='https://backstage.eu/hang-massive-autumn-tour-2024.html'>HANG MASSIVE - Autumn Tour 2024</a></td><td>Ambient</td><td>28,00 €</td></tr>
+<tr><td>13.11.24</td><td><a href='https://backstage.eu/tausend-rosen-live-2024.html'>TAUSEND ROSEN - Live 2024 | verlegt auf den 13.11.24</a></td><td>Pop</td><td>22,50 €</td></tr>
+<tr><td>13.11.24</td><td><a href='https://backstage.eu/apsilon-apsilon-live-2024.html'>APSILON - Apsilon Live 2024 | ausverkauft</a></td><td>Rap</td><td>36,40 €</td></tr>
+<tr><td>14.11.24</td><td><a href='https://backstage.eu/mother-s-cake-live-2024.html'>MOTHER'S CAKE - Live 2024</a></td><td>Progressive Rock</td><td>23,60 €</td></tr>
+<tr><td>14.11.24</td><td><a href='https://backstage.eu/nie-und-nimmer-10-jahre-die-jubilaums-tour-2024.html'>NIE UND NIMMER - 10 Jahre - Die Jubiläums-Tour 2024</a></td><td>HipHop, Rock, Pop</td><td>31,50 €</td></tr>
+<tr><td>14.11.24</td><td><a href='https://backstage.eu/hardcore-superstar-live-2024.html'>HARDCORE SUPERSTAR - Live 2024</a></td><td>Hardrock</td><td>40,85 €</td></tr>
+<tr><td>15.11.24</td><td><a href='https://backstage.eu/vola-live-2024.html'>VOLA - Live 2024</a></td><td>Progressive Metal</td><td>23,00 €</td></tr>
+<tr><td>15.11.24</td><td><a href='https://backstage.eu/soulbound-obsydian-tour-2024.html'>SOULBOUND - obsYdian Tour 2024</a></td><td>Metal</td><td>28,00 €</td></tr>
+<tr><td>15.11.24</td><td><a href='https://backstage.eu/smash-into-pieces-manifest-europe-tour-2024.html'>SMASH INTO PIECES - MANIFEST EUROPE TOUR 2024</a></td><td>Rock</td><td>32,70 €</td></tr>
+<tr><td>15.11.24</td><td><a href='https://backstage.eu/alcest-live-2024.html'>ALCEST - Les Chants de l’Aurore Tour 2024</a></td><td>Rock</td><td>38,95 €</td></tr>
+<tr><td>16.11.24</td><td><a href='https://backstage.eu/tanzt-2024-das-mittelalter-folk-rock-metal-festival.html'>TANZT! 2024 - Das Mittelalter- & Folk-Rock/-Metal Festival</a></td><td>Folk, Rock, Metal</td><td>54,00 €</td></tr>
+<tr><td>16.11.24</td><td><a href='https://backstage.eu/bowmen-bad-rain-double-headliner-konzert.html'>BOWMEN & BAD RAIN - Double Headliner Konzert</a></td><td>Rock</td><td>23,70 €</td></tr>
+<tr><td>16.11.24</td><td><a href='https://backstage.eu/sepultura-40-years.html'>SEPULTURA - 40 YEARS FAREWELL TOUR "CELEBRATING LIFE THROUGH DEATH"</a></td><td>Metal</td><td>60,00 €</td></tr>
+<tr><td>16.11.24</td><td><a href='https://backstage.eu/nachtmahr-verboten-tour-2024.html'>NACHTMAHR - Verboten! Tour 2024</a></td><td>Industrial</td><td>32,00 €</td></tr>
+<tr><td>18.11.24</td><td><a href='https://backstage.eu/while-she-sleeps-live-2024-18-11-24.html'>WHILE SHE SLEEPS - Live 2024 | 18.11.24</a></td><td>Metalcore</td><td>41,00 €</td></tr>
+<tr><td>18.11.24</td><td><a href='https://backstage.eu/the-bottom-line-europe-tour-2024.html'>THE BOTTOM LINE - EUROPE TOUR 2024</a></td><td>Alternative, Indie</td><td>23,50 €</td></tr>
+<tr><td>18.11.24</td><td><a href='https://backstage.eu/popa-chubby-the-beast-band-usa-live-2024.html'>POPA CHUBBY & THE BEAST BAND (USA) - Live 2024 | abgesagt</a></td><td>Electric-Blues</td><td>38,60 €</td></tr>
+<tr><td>19.11.24</td><td><a href='https://backstage.eu/the-exploited-let-s-stop-a-war-tour-2024.html'>THE EXPLOITED - LET'S STOP A WAR TOUR 2024</a></td><td>Punk</td><td>32,40 €</td></tr>
+<tr><td>19.11.24</td><td><a href='https://backstage.eu/while-she-sleeps-live-2024-19-11-24.html'>WHILE SHE SLEEPS - Live 2024 | 19.11.24</a></td><td>Metalcore</td><td>41,00 €</td></tr>
+<tr><td>19.11.24</td><td><a href='https://backstage.eu/gasteliste-geisterbahn-sind-wir-die-ottos.html'>GÄSTELISTE GEISTERBAHN - „Sind wir die Ottos?"</a></td><td>Podcast</td><td>30,20 €</td></tr>
+<tr><td>19.11.24</td><td><a href='https://backstage.eu/miami-yacine-welcome-to-miami-tour-2024.html'>MIAMI YACINE - WELCOME TO MIAMI TOUR 2024 | abgesagt</a></td><td>Rap</td><td>34,75 €</td></tr>
+<tr><td>20.11.24</td><td><a href='https://backstage.eu/heisskalt-vom-tun-und-lassen-tour-2024.html'>HEISSKALT - Vom Tun und Lassen - Tour 2024</a></td><td>Rock</td><td>35,70 €</td></tr>
+<tr><td>21.11.24</td><td><a href='https://backstage.eu/error-aspartam-bitter-tour.html'>ERROR - ASPARTAM-BITTER TOUR 2024</a></td><td>Pop</td><td>25,90 €</td></tr>
+<tr><td>21.11.24</td><td><a href='https://backstage.eu/fever-333-live-2024.html'>FEVER 333 - Live 2024 | abgesagt</a></td><td>Rock</td><td>35,00 €</td></tr>
+<tr><td>21.11.24</td><td><a href='https://backstage.eu/royal-republic-the-lovecop-tour.html'>ROYAL REPUBLIC - THE LOVECOP TOUR</a></td><td>Rock, Indie</td><td>50,70 €</td></tr>
+<tr><td>21.11.24</td><td><a href='https://backstage.eu/erdling-mein-element-die-10-jahre-jubilaumstournee-2024.html'>ERDLING - Mein Element - Die 10 Jahre Jubiläumstournee 2024</a></td><td>Metal, NDH</td><td>28,00 €</td></tr>
+<tr><td>22.11.24</td><td><a href='https://backstage.eu/bilbao-live-2024.html'>BILBAO - LIVE 2024</a></td><td>Indie Pop</td><td>28,00 €</td></tr>
+<tr><td>22.11.24</td><td><a href='https://backstage.eu/milliarden-tour-2024.html'>MILLIARDEN - Tour 2024</a></td><td>Rock</td><td>35,20 €</td></tr>
+<tr><td>23.11.24</td><td><a href='https://backstage.eu/roachford-then-now-tour.html'>ROACHFORD - „Then & Now“ Tour</a></td><td>Soul</td><td>35,00 €</td></tr>
+<tr><td>23.11.24</td><td><a href='https://backstage.eu/lune-lumiere-tour-2024.html'>LUNE "LUMIÈRE TOUR 2024" | ausverkauft</a></td><td>Deutsch Rap</td><td>40,00 €</td></tr>
+<tr><td>25.11.24</td><td><a href='https://backstage.eu/anvil-one-and-only-europe-tour-2024.html'>ANVIL - One and Only - Europe Tour 2024</a></td><td>Heavy Metal</td><td>33,50 €</td></tr>
+<tr><td>25.11.24</td><td><a href='https://backstage.eu/rhapsody-of-fire-live-2024.html'>RHAPSODY OF FIRE - Live 2024</a></td><td>Power Metal</td><td>33,50 €</td></tr>
+<tr><td>26.11.24</td><td><a href='https://backstage.eu/xandria-serenia-live-2024.html'>XANDRIA & SIRENIA - Live 2024</a></td><td>Rock</td><td>31,20 €</td></tr>
+<tr><td>26.11.24</td><td><a href='https://backstage.eu/the-chats-live-2024.html'>THE CHATS - LIVE 2024</a></td><td>Rock, Indie, Alternative</td><td>38,05 €</td></tr>
+<tr><td>27.11.24</td><td><a href='https://backstage.eu/mert-demir-europe-tour-2024.html'>MERT DEMIR - Europe Tour 2024</a></td><td>New-Wave-anatolische Musik</td><td>47,50 €</td></tr>
+<tr><td>27.11.24</td><td><a href='https://backstage.eu/zartmann-live-2024.html'>ZARTMANN - Live 2024 | ausverkauft</a></td><td>Rap</td><td>29,68 €</td></tr>
+<tr><td>28.11.24</td><td><a href='https://backstage.eu/dayseeker-live-2024.html'>DAYSEEKER - Live 2024 | ausverkauft</a></td><td>Metalcore, Post Hardcore</td><td>26,00 €</td></tr>
+<tr><td>28.11.24</td><td><a href='https://backstage.eu/jaill-tinte-tragik-tour-2024.html'>JAILL - TINTE & TRAGIK TOUR 2024</a></td><td>Rap</td><td>31,30 €</td></tr>
+<tr><td>28.11.24</td><td><a href='https://backstage.eu/d-a-d-live-2024.html'>D-A-D - Live 2024</a></td><td>Rock</td><td>43,00 €</td></tr>
+<tr><td>29.11.24</td><td><a href='https://backstage.eu/emo-s-not-dead-29-11-24.html'>EMO´S NOT DEAD | 29.11.24</a></td><td>Emo Party</td><td></td></tr>
+<tr><td>29.11.24</td><td><a href='https://backstage.eu/as-i-lay-dying-through-storms-ahead-europe-2024.html'>AS I LAY DYING - THROUGH STORMS AHEAD EUROPE 2024</a></td><td>Metalcore</td><td>49,40 €</td></tr>
+<tr><td>29.11.24</td><td><a href='https://backstage.eu/league-of-distortion-galvanize-tour-2024.html'>LEAGUE OF DISTORTION - GALVANIZE TOUR 2024</a></td><td>Metal</td><td>24,60 €</td></tr>
+<tr><td>29.11.24</td><td><a href='https://backstage.eu/april-art-rodeo-tour-2024.html'>APRIL ART - RODEO TOUR 2024</a></td><td>Modern Metal</td><td>28,00 €</td></tr>
+<tr><td>29.11.24</td><td><a href='https://backstage.eu/ikke-huftgold-nummer-eins-live-tour-2024.html'>IKKE HÜFTGOLD - Nummer Eins - Live Tour 2024</a></td><td>Schlager</td><td>49,90 €</td></tr>
+<tr><td>30.11.24</td><td><a href='https://backstage.eu/the-new-roses-attracted-to-danger-tour-2024.html'>THE NEW ROSES - Attracted To Danger Tour 2024</a></td><td>Rock</td><td>32,00 €</td></tr>
+<tr><td>30.11.24</td><td><a href='https://backstage.eu/hammerschmitt-survivors-kintsugi-live.html'>HAMMERSCHMITT SURVIVORS -  „Kintsugi Live"</a></td><td></td><td>25,00 €</td></tr></table></div><button class='collapsible'>Dezember 24</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>01.12.24</td><td><a href='https://backstage.eu/zebrahead-live-2024.html'>ZEBRAHEAD - Live 2024</a></td><td>Punkrock</td><td>28,00 €</td></tr>
+<tr><td>01.12.24</td><td><a href='https://backstage.eu/ell-live-2024.html'>ELL - Live 2024</a></td><td>Rock</td><td>18,10 €</td></tr>
+<tr><td>02.12.24</td><td><a href='https://backstage.eu/kishi-bashi-kantos.html'>KISHI BASHI - Kantos</a></td><td>Rock</td><td>32,70 €</td></tr>
+<tr><td>03.12.24</td><td><a href='https://backstage.eu/restless-road-live-2024.html'>RESTLESS ROAD - Live 2024</a></td><td>Rock</td><td>32,00 €</td></tr>
+<tr><td>03.12.24</td><td><a href='https://backstage.eu/nada-surf-moon-mirror-tour.html'>NADA SURF - Moon Mirror Tour</a></td><td>Alternative Rock</td><td>44,75 €</td></tr>
+<tr><td>03.12.24</td><td><a href='https://backstage.eu/gong-universal-ascension-24.html'>GONG - Universal Ascension 24</a></td><td>Progressive Rock</td><td>24,70 €</td></tr>
+<tr><td>04.12.24</td><td><a href='https://backstage.eu/wheel-europe-tour-2024.html'>WHEEL - Europe Tour 2024</a></td><td>Prog Metal</td><td>30,40 €</td></tr>
+<tr><td>04.12.24</td><td><a href='https://backstage.eu/donots-30-jahre-tour-grand-birthday-slam-04-12-24.html'>DONOTS - 30 JAHRE-TOUR: GRAND BIRTHDAY SLAMS | 04.12.24</a></td><td>Rock</td><td>49,30 €</td></tr>
+<tr><td>05.12.24</td><td><a href='https://backstage.eu/thornhill-live-2024.html'>THORNHILL - Live 2024</a></td><td>Metalcore</td><td>29,80 €</td></tr>
+<tr><td>05.12.24</td><td><a href='https://backstage.eu/elias-verlieren-gefunden-tour-2024.html'>ELIAS - Verlieren / Gefunden Tour 2024</a></td><td></td><td>20,00 €</td></tr>
+<tr><td>05.12.24</td><td><a href='https://backstage.eu/donots-30-jahre-tour-grand-birthday-slam-05-12-24.html'>DONOTS - 30 JAHRE-TOUR: GRAND BIRTHDAY SLAMS | 05.12.24</a></td><td>Rock</td><td>49,30 €</td></tr>
+<tr><td>06.12.24</td><td><a href='https://backstage.eu/role-model-live-2024.html'>ROLE MODEL - Live 2024</a></td><td>Rock</td><td>28,00 €</td></tr>
+<tr><td>06.12.24</td><td><a href='https://backstage.eu/blues-pills-live-2024.html'>BLUES PILLS - Live 2024</a></td><td>Rock, Blues</td><td>38,00 €</td></tr>
+<tr><td>07.12.24</td><td><a href='https://backstage.eu/neverland-in-ashes-live-on-the-horizon-2024.html'>NEVERLAND IN ASHES - Live On The Horizon 2024</a></td><td>Metal</td><td>20,30 €</td></tr>
+<tr><td>08.12.24</td><td><a href='https://backstage.eu/ignite-slapshot-europe-30th-anniversary-tour.html'>IGNITE + SLAPSHOT - Europe • 30th Anniversary Tour</a></td><td>Alternative Rock</td><td>33,50 €</td></tr>
+<tr><td>08.12.24</td><td><a href='https://backstage.eu/lizzard-live-2024.html'>LIZZARD - Live 2024</a></td><td>Art Rock</td><td>22,50 €</td></tr>
+<tr><td>10.12.24</td><td><a href='https://backstage.eu/evergrey-emptiness-over-europe-tour-2024.html'>EVERGREY - Emptiness Over Europe Tour 2024</a></td><td>Progressive Metal</td><td>31,30 €</td></tr>
+<tr><td>10.12.24</td><td><a href='https://backstage.eu/dying-fetus-european-tour-fall-2024.html'>DYING FETUS - European Tour Fall 2024</a></td><td>Death Metal</td><td>40,90 €</td></tr>
+<tr><td>10.12.24</td><td><a href='https://backstage.eu/rrotzer-dumme-ideen-tour-2024.html'>Rrotzer - DUMME IDEEN TOUR 2024</a></td><td>Pop</td><td>26,00 €</td></tr>
+<tr><td>11.12.24</td><td><a href='https://backstage.eu/terror-live-2024.html'>TERROR - Live 2024</a></td><td>Hardcore</td><td>34,80 €</td></tr>
+<tr><td>13.12.24</td><td><a href='https://backstage.eu/dondon-live-2024.html'>DONDON - Live 2024</a></td><td>Pop</td><td>26,00 €</td></tr>
+<tr><td>13.12.24</td><td><a href='https://backstage.eu/boppin-b-live-2024.html'>BOPPIN`B - Live 2024</a></td><td>Punk, Rock, Ska</td><td>23,60 €</td></tr>
+<tr><td>13.12.24</td><td><a href='https://backstage.eu/future-palace-european-tour-2024.html'>FUTURE PALACE - "Europe/UK Headline" Tour 2024</a></td><td>Post Hardcore</td><td>29,00 €</td></tr>
+<tr><td>14.12.24</td><td><a href='https://backstage.eu/curse-unzerstorbarer-sommer-tour-2024-25.html'>CURSE - Unzerstörbarer Sommer - Tour 2024/25</a></td><td>Rap</td><td>39,80 €</td></tr>
+<tr><td>15.12.24</td><td><a href='https://backstage.eu/berq-live-2024.html'>BERQ - Live 2024</a></td><td>Pop</td><td>39,20 €</td></tr>
+<tr><td>16.12.24</td><td><a href='https://backstage.eu/miss-may-i-eu-uk-tour-2024.html'>MISS MAY I - EU/UK TOUR 2024</a></td><td>Metalcore</td><td>33,50 €</td></tr>
+<tr><td>17.12.24</td><td><a href='https://backstage.eu/mavi-gri-mavi-gri-europe-tour.html'>MAVI GRI - MAVI GRI EUROPE TOUR</a></td><td>Pop, Rock</td><td>45,00 €</td></tr>
+<tr><td>17.12.24</td><td><a href='https://backstage.eu/peter-and-the-test-tube-babies-dead-rock-stars-vol-2-tour-2024.html'>PETER AND THE TEST TUBE BABIES - "LIFE OF PETER Tour 2024"</a></td><td>Punkrock</td><td>33,50 €</td></tr>
+<tr><td>19.12.24</td><td><a href='https://backstage.eu/fit-for-an-autopsy-live-2024.html'>FIT FOR AN AUTOPSY - Live 2024</a></td><td>Deathcore</td><td>40,90 €</td></tr>
+<tr><td>19.12.24</td><td><a href='https://backstage.eu/esta-yacht-mit-deinem-namen-tour-2024.html'>EstA - Yacht mit deinem Namen Tour 2024</a></td><td>Rap</td><td>30,00 €</td></tr>
+<tr><td>19.12.24</td><td><a href='https://backstage.eu/faroon-revenge-tour-2024.html'>FAROON - REVENGE TOUR 2024 | verlegt auf den 19.12.24</a></td><td>Rap</td><td>38,90 €</td></tr>
+<tr><td>20.12.24</td><td><a href='https://backstage.eu/erdmobel-weihnachtstour-2024.html'>ERDMÖBEL - Weihnachtstour 2024</a></td><td>Rock, Indie</td><td>32,80 €</td></tr>
+<tr><td>21.12.24</td><td><a href='https://backstage.eu/26-schalldruck-festival-metal-core-21-12-24.html'>26. SCHALLDRUCK FESTIVAL (Metal & Core) | 21.12.24</a></td><td>Metal</td><td>20,00 €</td></tr>
+<tr><td>21.12.24</td><td><a href='https://backstage.eu/dailysoap-the-final-show.html'>DAILYSOAP - THE FINAL SHOW</a></td><td>Punkrock</td><td>15,00 €</td></tr>
+<tr><td>21.12.24</td><td><a href='https://backstage.eu/emil-bulls-xmas-bash-2024.html'>EMIL BULLS - Xmas Bash 2024 | ausverkauft</a></td><td>Rock, Metal</td><td>42,35 €</td></tr>
+<tr><td>22.12.24</td><td><a href='https://backstage.eu/ferris-mc-dj-stylewarz-mortal-comeback-tour-2024.html'>FERRIS MC & DJ STYLEWARZ - Mortal Comeback Tour 2024</a></td><td>HipHop</td><td>29,10 €</td></tr>
+<tr><td>22.12.24</td><td><a href='https://backstage.eu/doro-winter-tour-2024.html'>DORO - Conqueress - Forever Strong And Proud</a></td><td>Rock</td><td>52,70 €</td></tr>
+<tr><td>27.12.24</td><td><a href='https://backstage.eu/dominum-majestica-hammer-king-the-dead-don-t-die-tour.html'>DOMINUM + MAJESTICA + HAMMER KING - The Dead Don't Die Tour</a></td><td>Metal</td><td>35,70 €</td></tr>
+<tr><td>28.12.24</td><td><a href='https://backstage.eu/blackened-halo-a-nightmare-after-christmas.html'>BLACKENED HALO - A NIGHTMARE AFTER CHRISTMAS</a></td><td>Metal</td><td>17,00 €</td></tr>
+<tr><td>28.12.24</td><td><a href='https://backstage.eu/fall-of-man-2024.html'>FALL OF MAN 2024</a></td><td>Metal</td><td>36,40 €</td></tr>
+<tr><td>28.12.24</td><td><a href='https://backstage.eu/the-rock-n-roll-wrestling-bash-2024.html'>THE ROCK `N´ ROLL WRESTLING BASH 2024</a></td><td>Trash Wrestling</td><td>31,30 €</td></tr></table></div><button class='collapsible'>Januar 25</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>03.01.25</td><td><a href='https://backstage.eu/liver-of-a-duck-live-2024.html'>LIVER OF A DUCK - Live 2024</a></td><td>Heavy Metal</td><td>20,00 €</td></tr>
+<tr><td>07.01.25</td><td><a href='https://backstage.eu/canozan-live-in-munchen.html'>CANOZAN - Live In München</a></td><td>pop</td><td>50,50 €</td></tr>
+<tr><td>10.01.25</td><td><a href='https://backstage.eu/blitz-union-hello-hello-my-name-is-tour.html'>BLITZ UNION - Hello Hello My Name Is Tour</a></td><td>EDM Rock</td><td>3,40 €</td></tr>
+<tr><td>10.01.25</td><td><a href='https://backstage.eu/talco-20th-anniversary-34-jahre-backstage.html'>TALCO - 20th Anniversary | 34 JAHRE BACKSTAGE</a></td><td>SKA Punk</td><td>37,50 €</td></tr>
+<tr><td>17.01.25</td><td><a href='https://backstage.eu/dark-funeral-let-the-devil-in-european-winter-tour-2025.html'>DARK FUNERAL - LET THE DEVIL IN EUROPEAN WINTER TOUR 2025</a></td><td>Black Metal</td><td>43,00 €</td></tr>
+<tr><td>17.01.25</td><td><a href='https://backstage.eu/grave-digger-45th-anniversary-tour-2025.html'>GRAVE DIGGER - 45th Anniversary Tour 2025</a></td><td>Heavy Metal</td><td>40,80 €</td></tr>
+<tr><td>18.01.25</td><td><a href='https://backstage.eu/punchfest-2025-apron.html'>PUNCHFEST 2025 - APRON</a></td><td></td><td>17,00 €</td></tr>
+<tr><td>18.01.25</td><td><a href='https://backstage.eu/schreyner-monsters-of-rock-tour-2025.html'>SCHREYNER - Monsters of Rock - Tour 2025</a></td><td>Rock</td><td>20,00 €</td></tr>
+<tr><td>21.01.25</td><td><a href='https://backstage.eu/jiggo-love-language-tour-2025.html'>JIGGO - LOVE LANGUAGE TOUR 2025</a></td><td>Rap</td><td>34,95 €</td></tr>
+<tr><td>21.01.25</td><td><a href='https://backstage.eu/kublai-khan-tx-europe-uk-tour-2025.html'>KUBLAI KHAN TX - Europe & UK Tour 2025</a></td><td>Hardcore Punk</td><td>34,70 €</td></tr>
+<tr><td>22.01.25</td><td><a href='https://backstage.eu/chuck-ragan-the-camaraderie-live-2025.html'>CHUCK RAGAN & THE CAMARADERIE - Love & Lore-Tour 2025</a></td><td>Folk Rock</td><td>32,00 €</td></tr>
+<tr><td>22.01.25</td><td><a href='https://backstage.eu/venues-transience-tour.html'>VENUES - TRANSIENCE TOUR</a></td><td>Metalcore</td><td>23,60 €</td></tr>
+<tr><td>23.01.25</td><td><a href='https://backstage.eu/die-herren-wesselsky-heute-schon-gelebt-tour-2025.html'>DIE HERREN WESSELSKY - HEUTE SCHON GELEBT? - TOUR 2025</a></td><td>NDH, Rock, Metal</td><td>39,70 €</td></tr>
+<tr><td>23.01.25</td><td><a href='https://backstage.eu/transmission-the-sound-of-joy-division-23-01-25.html'>TRANSMISSION - The Sound of Joy Division | 23.01.25</a></td><td>Synth Pop</td><td>25,20 €</td></tr>
+<tr><td>24.01.25</td><td><a href='https://backstage.eu/gotz-widmann-blutenduft-tour.html'>GÖTZ WIDMANN - „Blütenduft“ Tour</a></td><td>Liedermacher</td><td>28,00 €</td></tr>
+<tr><td>24.01.25</td><td><a href='https://backstage.eu/the-butcher-sisters-the-great-music-band-tour-2025.html'>THE BUTCHER SISTERS - THE GREAT MUSIC BAND TOUR 2025</a></td><td>Rap</td><td>31,30 €</td></tr>
+<tr><td>25.01.25</td><td><a href='https://backstage.eu/paganfest-2025.html'>PAGANFEST 2025</a></td><td>Metal, Rock, Pagan</td><td>56,20 €</td></tr>
+<tr><td>25.01.25</td><td><a href='https://backstage.eu/xwave-tour-der-triaden-2025.html'>XWAVE - TOUR DER TRIADEN 2025</a></td><td>HipHop</td><td>35,00 €</td></tr>
+<tr><td>27.01.25</td><td><a href='https://backstage.eu/insomnium-shadows-of-the-dying-sun-10th-anniversary-tour.html'>INSOMNIUM - Shadows of the Dying Sun 10th Anniversary Tour</a></td><td>Metal</td><td>37,85 €</td></tr>
+<tr><td>29.01.25</td><td><a href='https://backstage.eu/touche-amore-live-2025.html'>TOUCHÉ AMORÉ - Live 2025</a></td><td>Post Hardcore</td><td>31,50 €</td></tr>
+<tr><td>30.01.25</td><td><a href='https://backstage.eu/herbert-pixner-the-italo-connection-tour-2025.html'>HERBERT PIXNER & THE ITALO-CONNECTION - Tour 2025</a></td><td></td><td>54,50 €</td></tr>
+<tr><td>31.01.25</td><td><a href='https://backstage.eu/orden-ogan-the-tour-of-fear.html'>ORDEN OGAN - THE TOUR OF FEAR</a></td><td>Folk Metal</td><td>43,00 €</td></tr>
+<tr><td>31.01.25</td><td><a href='https://backstage.eu/trille-aus-meiner-haut-tour-2025.html'>TRILLE - aus meiner haut tour 2025</a></td><td>Pop</td><td>28,91 €</td></tr></table></div><button class='collapsible'>Februar 25</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>01.02.25</td><td><a href='https://backstage.eu/kapotaki-stadltort-o-ur.html'>KAPOTAKI - STADLTORT(O)UR</a></td><td>Rock</td><td>15,00 €</td></tr>
+<tr><td>01.02.25</td><td><a href='https://backstage.eu/das-lumpenpack-nie-wieder-w-a-c-h.html'>DAS LUMPENPACK - Nie wieder W.A.C.H.</a></td><td>Rock</td><td>49,60 €</td></tr>
+<tr><td>01.02.25</td><td><a href='https://backstage.eu/the-halo-effect-live-2025.html'>THE HALO EFFECT - Live 2025</a></td><td>Melodic Death Metal</td><td>49,95 €</td></tr>
+<tr><td>02.02.25</td><td><a href='https://backstage.eu/rolling-quartz-europe-tour-2025.html'>Rolling Quartz - “Stand Up” 2nd EU Tour 2025</a></td><td>K-POP</td><td>40,00 €</td></tr>
+<tr><td>05.02.25</td><td><a href='https://backstage.eu/stick-to-your-guns-europe-2025.html'>STICK TO YOUR GUNS - Europe 2025</a></td><td>Hardcore</td><td>43,35 €</td></tr>
+<tr><td>06.02.25</td><td><a href='https://backstage.eu/florentina-alles-auf-grun-tour-2025.html'>FLORENTINA - Alles auf Grün - Tour 2025</a></td><td>HipHop</td><td>29,99 €</td></tr>
+<tr><td>08.02.25</td><td><a href='https://backstage.eu/cattle-decapitation-shadow-of-intent-live-2025.html'>CATTLE DECAPITATION & SHADOW OF INTENT - The Terrastic Reconquest Tour 2025</a></td><td>Death Grind</td><td>40,90 €</td></tr>
+<tr><td>09.02.25</td><td><a href='https://backstage.eu/silent-planet-superbloom-eu-uk-tour-2025.html'>SILENT PLANET - Superbloom - EU/UK Tour 2025</a></td><td>Metalcore</td><td>34,70 €</td></tr>
+<tr><td>10.02.25</td><td><a href='https://backstage.eu/mehnersmoos-die-grosse-arschrapper-tour.html'>MEHNERSMOOS - DIE GROSSE ARSCHRAPPER TOUR</a></td><td>Rap</td><td>46,59 €</td></tr>
+<tr><td>11.02.25</td><td><a href='https://backstage.eu/the-devil-wears-prada-live-2025.html'>THE DEVIL WEARS PRADA - Live 2025</a></td><td>Metalcore</td><td>35,00 €</td></tr>
+<tr><td>11.02.25</td><td><a href='https://backstage.eu/civo-weg-von-hier-tour-2025.html'>CIVO - WEG VON HIER TOUR 2025</a></td><td>Rap</td><td>39,97 €</td></tr>
+<tr><td>12.02.25</td><td><a href='https://backstage.eu/paleface-swiss-european-headline-tour-2025.html'>PALEFACE SWISS - European Headline Tour 2025</a></td><td>Heavy Metal</td><td>36,80 €</td></tr>
+<tr><td>13.02.25</td><td><a href='https://backstage.eu/prime-circle.html'>PRIME CIRCLE</a></td><td></td><td>35,00 €</td></tr>
+<tr><td>14.02.25</td><td><a href='https://backstage.eu/julia-meladin-leben-meiner-traume-tour.html'>JULIA MELADIN – Leben meiner Träume Tour</a></td><td>Pop</td><td>34,90 €</td></tr>
+<tr><td>14.02.25</td><td><a href='https://backstage.eu/seraina-telli-color-addict-tour.html'>SERAINA TELLI - Color Addict Tour</a></td><td>Rock, Metal</td><td>22,50 €</td></tr>
+<tr><td>14.02.25</td><td><a href='https://backstage.eu/carly-pearce-hummingbird-2025-uk-eu-tour.html'>CARLY PEARCE - hummingbird 2025 uk/eu tour</a></td><td>County-Singer-Songwriterin</td><td>35,20 €</td></tr>
+<tr><td>15.02.25</td><td><a href='https://backstage.eu/the-night-flight-orchestra-moon-over-europe-tour-2025.html'>THE NIGHT FLIGHT ORCHESTRA - Moon Over Europe Tour 2025</a></td><td>Rock</td><td>35,00 €</td></tr>
+<tr><td>15.02.25</td><td><a href='https://backstage.eu/alvin-es-a-mokusok-2025-tour.html'>ALVIN és a Mókusok - 2025 Tour</a></td><td>Rock</td><td>25,00 €</td></tr>
+<tr><td>15.02.25</td><td><a href='https://backstage.eu/one-step-closer-a-tribute-to-linkin-park.html'>ONE STEP CLOSER – A tribute to Linkin Park</a></td><td>Rock, Coverband</td><td>39,00 €</td></tr>
+<tr><td>16.02.25</td><td><a href='https://backstage.eu/ngee-strassenapotheker-tour-2025.html'>NGEE - STRASSENAPOTHEKER TOUR 2025</a></td><td>Rap</td><td>39,93 €</td></tr>
+<tr><td>16.02.25</td><td><a href='https://backstage.eu/tonbandgerat-ein-anderes-leben-tour.html'>TONBANDGERÄT - Ein anderes Leben Tour</a></td><td>Indie Pop</td><td>34,90 €</td></tr>
+<tr><td>17.02.25</td><td><a href='https://backstage.eu/trash-boat-live-2025.html'>TRASH BOAT - Live 2025</a></td><td>Alternative</td><td>25,00 €</td></tr>
+<tr><td>18.02.25</td><td><a href='https://backstage.eu/lucio101-101-prozent-tour-2025.html'>LUCIO101 - 101 PROZENT TOUR 2025</a></td><td>HipHop</td><td>40,80 €</td></tr>
+<tr><td>19.02.25</td><td><a href='https://backstage.eu/queensryche-the-origins-tour-eu-uk-2025.html'>QUEENSRŸCHE - The Origins Tour EU/UK 2025</a></td><td>Progressive Metal</td><td>46,40 €</td></tr>
+<tr><td>19.02.25</td><td><a href='https://backstage.eu/universum25-die-maschinen-wollen-leben-2025.html'>UNIVERSUM25 - "Die Maschinen wollen leben" 2025</a></td><td>Rock, Synth, Metal</td><td>39,50 €</td></tr>
+<tr><td>21.02.25</td><td><a href='https://backstage.eu/unleash-the-archers-phantoma-european-tour-2025.html'>UNLEASH THE ARCHERS - PHANTOMA EUROPEAN TOUR 2025</a></td><td>Power Metal</td><td>33,50 €</td></tr>
+<tr><td>21.02.25</td><td><a href='https://backstage.eu/kiasmos-live-2025.html'>KIASMOS - Live 2025</a></td><td>Minimal Electro</td><td>40,00 €</td></tr>
+<tr><td>22.02.25</td><td><a href='https://backstage.eu/vukovi-my-god-has-got-a-gun-eu-uk-tour-2025.html'>VUKOVI - My God Has Got A Gun EU/UK Tour 2025</a></td><td>Rock</td><td>33,85 €</td></tr>
+<tr><td>22.02.25</td><td><a href='https://backstage.eu/jeremy-loops-live-2025.html'>JEREMY LOOPS - Live 2025</a></td><td>Singer Songwriter</td><td>35,00 €</td></tr>
+<tr><td>22.02.25</td><td><a href='https://backstage.eu/flash-forward-renegade-tour-2025.html'>FLASH FORWARD - RENEGADE TOUR 2025</a></td><td>Alternative Rock</td><td>29,10 €</td></tr>
+<tr><td>23.02.25</td><td><a href='https://backstage.eu/kidd-kazama-lil-tees-sad-stunner-tour.html'>KIDD KAZAMA & LIL TEES - Sad Stunner Tour</a></td><td>Rap</td><td>28,30 €</td></tr>
+<tr><td>23.02.25</td><td><a href='https://backstage.eu/napalm-death-campaign-for-musical-destruction-2025.html'>NAPALM DEATH - CAMPAIGN FOR MUSICAL DESTRUCTION 2025</a></td><td>Metal</td><td>39,70 €</td></tr>
+<tr><td>26.02.25</td><td><a href='https://backstage.eu/bausa-stimme-der-vernunft-tour-2025.html'>BAUSA - Stimme der Vernunft Tour 2025</a></td><td>Rap</td><td>48,00 €</td></tr>
+<tr><td>27.02.25</td><td><a href='https://backstage.eu/obscura-silver-linings-europe-2025.html'>OBSCURA - Silver Linings // Europe 2025</a></td><td>Technical Death Metal</td><td>31,20 €</td></tr>
+<tr><td>27.02.25</td><td><a href='https://backstage.eu/dewolff-live-2025.html'>DeWolff - Live 2025</a></td><td>Bluesrock</td><td>30,20 €</td></tr>
+<tr><td>27.02.25</td><td><a href='https://backstage.eu/dirkschneider-balls-to-the-wall-40th-anniversary-tour.html'>DIRKSCHNEIDER - BALLS TO THE WALL - 40th ANNIVERSARY TOUR</a></td><td>Metal</td><td>47,20 €</td></tr>
+<tr><td>28.02.25</td><td><a href='https://backstage.eu/leoniden-sophisticated-sad-songs-tour-2025.html'>LEONIDEN - Sophisticated Sad Songs - Tour 2025</a></td><td>Indie Rock</td><td>39,00 €</td></tr>
+<tr><td>28.02.25</td><td><a href='https://backstage.eu/nachtblut-todschick-tour-2025.html'>NACHTBLUT - Todschick Tour 2025</a></td><td>Dark Metal</td><td>32,30 €</td></tr></table></div><button class='collapsible'>März 25</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>01.03.25</td><td><a href='https://backstage.eu/growl-bowl-festival-2025.html'>GROWL BOWL FESTIVAL 2025</a></td><td>Metal</td><td>43,00 €</td></tr>
+<tr><td>01.03.25</td><td><a href='https://backstage.eu/bibiza-bis-einer-weint-2025.html'>BIBIZA - bis einer weint 2025</a></td><td>Rock</td><td>38,25 €</td></tr>
+<tr><td>01.03.25</td><td><a href='https://backstage.eu/enemy-inside-european-tour-2025.html'>ENEMY INSIDE - "European Tour 2025"</a></td><td>Dark Rock, Alternative Metal</td><td>27,90 €</td></tr>
+<tr><td>02.03.25</td><td><a href='https://backstage.eu/hippotraktor-the-great-belgian-trendkill-tour.html'>HIPPOTRAKTOR - THE GREAT BELGIAN TRENDKILL TOUR</a></td><td>Progressive Metal</td><td>20,30 €</td></tr>
+<tr><td>04.03.25</td><td><a href='https://backstage.eu/allt-from-the-new-world-european-tour.html'>ALLT - From The New World - European Tour</a></td><td>Metalcore</td><td>25,80 €</td></tr>
+<tr><td>05.03.25</td><td><a href='https://backstage.eu/the-baboon-show-20th-anniversary-party.html'>THE BABOON SHOW - 20th Anniversary Party!</a></td><td>Rock, Punk</td><td>45,20 €</td></tr>
+<tr><td>06.03.25</td><td><a href='https://backstage.eu/jbs-outrun-tour-2025.html'>JBS - OUTRUN Tour 2025</a></td><td>INDIE-POP, SYNTHWAVE</td><td>30,99 €</td></tr>
+<tr><td>06.03.25</td><td><a href='https://backstage.eu/green-lungs-unto-others-heathen-neverlands-tour.html'>GREEN LUNG & UNTO OTHERS - Heathen Neverlands Tour</a></td><td>Stoner, Doom Metal</td><td>34,90 €</td></tr>
+<tr><td>06.03.25</td><td><a href='https://backstage.eu/ritter-lean-stell-dir-vor-du-warst-nicht-da-tour-2025.html'>RITTER LEAN - "Stell dir vor du warst nicht da" Tour 2025</a></td><td>Indie Pop</td><td>39,20 €</td></tr>
+<tr><td>07.03.25</td><td><a href='https://backstage.eu/achtvier-fucking-fizzle-tour-2024.html'>AchtVier - Fucking Fizzle Tour 2024 | verlegt auf den 07.03.25</a></td><td>Rap</td><td>27,10 €</td></tr>
+<tr><td>08.03.25</td><td><a href='https://backstage.eu/silverstein-25-years-of-noise.html'>SILVERSTEIN - 25 YEARS OF NOISE</a></td><td>Post-Hardcore</td><td>41,50 €</td></tr>
+<tr><td>08.03.25</td><td><a href='https://backstage.eu/the-busters-loud.html'>THE BUSTERS - Loud</a></td><td>Rock</td><td>35,70 €</td></tr>
+<tr><td>08.03.25</td><td><a href='https://backstage.eu/raum27-live-in-munchen.html'>RAUM27 - Live in München</a></td><td>Indie Pop</td><td>34,75 €</td></tr>
+<tr><td>09.03.25</td><td><a href='https://backstage.eu/suffocation-embrace-the-suffering.html'>SUFFOCATION - EMBRACE THE SUFFERING</a></td><td>Metal</td><td>39,70 €</td></tr>
+<tr><td>09.03.25</td><td><a href='https://backstage.eu/max-grimm-im-spati-tour-2025.html'>MAX GRIMM - IM SPÄTI TOUR 2025</a></td><td>Pop</td><td>27,90 €</td></tr>
+<tr><td>12.03.25</td><td><a href='https://backstage.eu/bloodywood-live-2025.html'>BLOODYWOOD - Live 2025</a></td><td>Metal</td><td>35,00 €</td></tr>
+<tr><td>13.03.25</td><td><a href='https://backstage.eu/deine-cousine-tour-2025.html'>DEINE COUSINE - TOUR 2025</a></td><td>Rock</td><td>42,85 €</td></tr>
+<tr><td>14.03.25</td><td><a href='https://backstage.eu/ccosmo-live-2025.html'>CCOSMO - Live 2025</a></td><td>Rap, Pop</td><td>28,00 €</td></tr>
+<tr><td>18.03.25</td><td><a href='https://backstage.eu/harlem-lake-the-mirrored-mask-tour-2025.html'>HARLEM LAKE - The Mirrored Mask Tour 2025 | wird verlegt</a></td><td>Blues</td><td>22,50 €</td></tr>
+<tr><td>20.03.25</td><td><a href='https://backstage.eu/lostboi-lino-tour-2025.html'>LOSTBOI LINO - Tour 2025</a></td><td></td><td>36,70 €</td></tr>
+<tr><td>20.03.25</td><td><a href='https://backstage.eu/punk-rock-factory-live-2024.html'>PUNK ROCK FACTORY - Stick to The Covers Tour</a></td><td>Rock / Punk Coversongs</td><td>32,90 €</td></tr>
+<tr><td>21.03.25</td><td><a href='https://backstage.eu/klangphonics-live-2025.html'>KLANGPHONICS - Live 2025</a></td><td>Rock</td><td>32,00 €</td></tr>
+<tr><td>21.03.25</td><td><a href='https://backstage.eu/flavio-giungla-tour-2025.html'>FLAVIO - GIUNGLA TOUR 2025</a></td><td>HipHop</td><td>27,60 €</td></tr>
+<tr><td>21.03.25</td><td><a href='https://backstage.eu/aladdin-jameel-redflag-tour-2025.html'>ALADDIN JAMEEL - Red flag Tour 2025</a></td><td>Comedy</td><td>33,70 €</td></tr>
+<tr><td>22.03.25</td><td><a href='https://backstage.eu/hexer-live-2025.html'>HeXer - Live 2025</a></td><td>HipHop</td><td>29,90 €</td></tr>
+<tr><td>23.03.25</td><td><a href='https://backstage.eu/welle-erdball-das-experiment-tour-2025.html'>WELLE:ERDBALL - Das Experiment - Tour 2025</a></td><td>Electropop</td><td>36,40 €</td></tr>
+<tr><td>25.03.25</td><td><a href='https://backstage.eu/the-godfathers-40th-anniversary-tour-2025.html'>THE GODFATHERS - 40th Anniversary Tour 2025</a></td><td>New Wave</td><td>29,90 €</td></tr>
+<tr><td>26.03.25</td><td><a href='https://backstage.eu/dorian-taharia-tour-2024.html'>DORIAN - Taharia Tour | verlegt auf den 26.03.25</a></td><td>Pop</td><td>31,30 €</td></tr>
+<tr><td>27.03.25</td><td><a href='https://backstage.eu/yasi-hofer-live-2025.html'>YASI HOFER - Live 2025</a></td><td>Rock</td><td>25,80 €</td></tr>
+<tr><td>27.03.25</td><td><a href='https://backstage.eu/the-o-reillys-and-the-paddyhats-live-2025.html'>THE O’REILLYS AND THE PADDYHATS - Live 2025</a></td><td>Irish Folk Punk</td><td>31,30 €</td></tr>
+<tr><td>28.03.25</td><td><a href='https://backstage.eu/dartagnan-herzblut-tour-2025.html'>dArtagnan - "Herzblut Tour 2025"</a></td><td>Folk Rock</td><td>47,20 €</td></tr>
+<tr><td>29.03.25</td><td><a href='https://backstage.eu/thundermother-live-2025.html'>THUNDERMOTHER - Godess of the Road Tour – 2025</a></td><td>Hardrock</td><td>39,00 €</td></tr>
+<tr><td>30.03.25</td><td><a href='https://backstage.eu/serious-black-metalized-world-tour.html'>SERIOUS BLACK - METALIZED WORLD TOUR</a></td><td>Metal</td><td>31,30 €</td></tr></table></div><button class='collapsible'>April 25</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>03.04.25</td><td><a href='https://backstage.eu/tag-my-heart-live-2025.html'>TAG MY HEART - Live 2025</a></td><td>Modern Metal</td><td>19,80 €</td></tr>
+<tr><td>03.04.25</td><td><a href='https://backstage.eu/rapk-rapk-live-tour-2025.html'>RAPK - RAPK LIVE TOUR 2025</a></td><td>Rap</td><td>32,80 €</td></tr>
+<tr><td>04.04.25</td><td><a href='https://backstage.eu/sono-the-2025-tour.html'>SONO - The 2025 Tour</a></td><td>Pop, Electronica</td><td>35,40 €</td></tr>
+<tr><td>05.04.25</td><td><a href='https://backstage.eu/behemoth-the-unholy-trinity-tour-2025.html'>BEHEMOTH - THE UNHOLY TRINITY TOUR 2025</a></td><td>Metal</td><td>66,60 €</td></tr>
+<tr><td>05.04.25</td><td><a href='https://backstage.eu/die-larmer-herz-auf-tour-2025.html'>DIE LÄRMER - HERZ AUF – TOUR 2025</a></td><td>Rock</td><td>37,90 €</td></tr>
+<tr><td>05.04.25</td><td><a href='https://backstage.eu/schmutzki-live-2025.html'>SCHMUTZKI - TOUR 2025</a></td><td>Rock</td><td>36,40 €</td></tr>
+<tr><td>06.04.25</td><td><a href='https://backstage.eu/tito-and-tarantula-brincamos-tour-2025.html'>TITO AND TARANTULA - Brincamos Tour 2025</a></td><td>Rock</td><td>40,00 €</td></tr>
+<tr><td>10.04.25</td><td><a href='https://backstage.eu/beslik-nachher-is-nachher.html'>BESLIK - Nachher is Nachher</a></td><td>Pop, Trap</td><td>28,00 €</td></tr>
+<tr><td>10.04.25</td><td><a href='https://backstage.eu/marcin-solo-dragon-tour-europe.html'>MARCIN - SOLO DRAGON TOUR EUROPE</a></td><td>Classic Guitar</td><td>32,90 €</td></tr>
+<tr><td>11.04.25</td><td><a href='https://backstage.eu/crystallion-claymorean-solar-system-live-2024.html'>CRYSTALLION + CLAYMOREAN + SOLAR SYSTEM - Strong Winds Magic Mist</a></td><td>Rock</td><td>19,10 €</td></tr>
+<tr><td>12.04.25</td><td><a href='https://backstage.eu/eko-fresh-legacy-tour-2025.html'>EKO FRESH - LEGACY Tour 2025</a></td><td>Rap</td><td>37,70 €</td></tr>
+<tr><td>14.04.25</td><td><a href='https://backstage.eu/symba-liebe-hass-tour-2025-nachholtermin-vom-13-10-24.html'>SYMBA - Liebe & Hass Tour 2025 | Nachholtermin vom 13.10.24</a></td><td>Rap</td><td>39,20 €</td></tr>
+<tr><td>19.04.25</td><td><a href='https://backstage.eu/dark-easter-metal-meeting-19-20-april-2025.html'>DARK EASTER METAL MEETING – 19. & 20. April 2025</a></td><td>Metal</td><td>149,70 €</td></tr>
+<tr><td>23.04.25</td><td><a href='https://backstage.eu/swallow-the-sun-live-2025.html'>SWALLOW THE SUN - Live 2025</a></td><td>Death Doom Metal</td><td>33,50 €</td></tr>
+<tr><td>25.04.25</td><td><a href='https://backstage.eu/acht-eimer-huhnerherzen-live-2025.html'>ACHT EIMER HÜHNERHERZEN - Live 2025</a></td><td>Rock</td><td>28,00 €</td></tr>
+<tr><td>25.04.25</td><td><a href='https://backstage.eu/catch-your-breath-the-savages-tour-2025.html'>CATCH YOUR BREATH - The SAVAGES Tour 2025</a></td><td>Metal</td><td>34,90 €</td></tr>
+<tr><td>25.04.25</td><td><a href='https://backstage.eu/di-rect-live-2025.html'>DI-RECT - Sphinx Clubtour</a></td><td>Rock</td><td>29,00 €</td></tr>
+<tr><td>26.04.25</td><td><a href='https://backstage.eu/soko-linx-grundhass-deutschland-musz-erben-tour-2025.html'>SOKO LiNX + GRUNDHASS - DEUTSCHLAND MUSZ ERBEN Tour 2025</a></td><td>Elektro-Punk</td><td>22,50 €</td></tr>
+<tr><td>26.04.25</td><td><a href='https://backstage.eu/prohibition-party-munchen.html'>PROHIBITION PARTY - München</a></td><td>Live, burlesque, elegant Party</td><td>21,69 €</td></tr></table></div><button class='collapsible'>Mai 25</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>02.05.25</td><td><a href='https://backstage.eu/prog-metal-mania-tag01.html'>PROG METAL MANIA</a></td><td>Prog Metal Festival</td><td>103,46 €</td></tr>
+<tr><td>03.05.25</td><td><a href='https://backstage.eu/jona-10-10-tour-2025.html'>JONA - 10/10 TOUR 2025</a></td><td>Pop</td><td>31,30 €</td></tr>
+<tr><td>04.05.25</td><td><a href='https://backstage.eu/miracle-of-sound-tour-2025.html'>MIRACLE OF SOUND - TOUR 2025</a></td><td>Rock</td><td>39,99 €</td></tr>
+<tr><td>09.05.25</td><td><a href='https://backstage.eu/cody-pennington-country-show-live-2025.html'>Cody Pennington Country Show - Live 2025</a></td><td>Country</td><td>23,00 €</td></tr>
+<tr><td>13.05.25</td><td><a href='https://backstage.eu/alexandra-kay-all-i-ve-ever-known-the-tour.html'>ALEXANDRA KAY - All I've Ever Known: The Tour</a></td><td>Country</td><td>30,00 €</td></tr>
+<tr><td>16.05.25</td><td><a href='https://backstage.eu/zymba-heaven-s-gate-tour-2025.html'>ZYMBA - Heaven's Gate Tour 2025</a></td><td></td><td>39,55 €</td></tr>
+<tr><td>24.05.25</td><td><a href='https://backstage.eu/ak-ausserkontrolle-mask-off-tour.html'>AK AusserKontrolle - Mask Off Tour</a></td><td>Rap</td><td>39,99 €</td></tr>
+<tr><td>24.05.25</td><td><a href='https://backstage.eu/coldheart-live-2025.html'>COLDHEART - Rock Classics | Live 2025</a></td><td>Rock</td><td>19,00 €</td></tr></table></div><button class='collapsible'>September 25</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>05.09.25</td><td><a href='https://backstage.eu/yakary-bubu-tour-2025.html'>YAKARY - Bubu Tour 2025</a></td><td>Rap</td><td>49,99 €</td></tr></table></div><button class='collapsible'>Oktober 25</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>08.10.25</td><td><a href='https://backstage.eu/felicia-lu-bittersweet-the-tour.html'>FELICIA LU - bittersweet - The Tour</a></td><td>Pop</td><td>29,90 €</td></tr>
+<tr><td>25.10.25</td><td><a href='https://backstage.eu/dame-der-weg-ist-das-ziel-live-2025.html'>DAME - Der Weg ist das Ziel - Live 2025</a></td><td>Rap</td><td>48,32 €</td></tr>
+<tr><td>31.10.25</td><td><a href='https://backstage.eu/mono-inc-live-2025.html'>MONO INC. - Live 2025</a></td><td>Dark Rock</td><td>52,70 €</td></tr></table></div><button class='collapsible'>November 25</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>06.11.25</td><td><a href='https://backstage.eu/marianne-rosenberg-bunter-planet-tour.html'>MARIANNE ROSENBERG - Bunter Planet Tour</a></td><td>Schlager</td><td>67,00 €</td></tr>
+<tr><td>29.11.25</td><td><a href='https://backstage.eu/my-tallica-tribute-to-metallica-2025.html'>MY'TALLICA - Tribute To Metallica 2025</a></td><td>Coverband</td><td>28,00 €</td></tr></table></div><button class='collapsible'>Januar 26</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>09.01.26</td><td><a href='https://backstage.eu/eddin-23-59-tour-35-jahre-backstage.html'>EDDIN -"23:59" TOUR- | 35 JAHRE BACKSTAGE</a></td><td>Rap</td><td>39,00 €</td></tr></table></div><button class='collapsible'>März 26</button><div class='content'><table>
+        <tr>
+          <th>Datum</th>
+          <th>Band</th>
+          <th>Genre</th>
+          <th>Preis</th>
+        </tr>
+        <tr><td>28.03.26</td><td><a href='https://backstage.eu/julian-sommer-jetzt-kommt-der-sommer-tour-2026.html'>JULIAN SOMMER - Jetzt kommt der Sommer - Tour 2026</a></td><td>Schlager</td><td>37,40 €</td></tr></table></div>  </div>
+</body>
+</html>
