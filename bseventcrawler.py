@@ -120,7 +120,7 @@ for page in range(1, max_page + 1):
     print(f"Getting page number {page}")
 
     try:
-        response = requests.get(f"https://backstage.eu/veranstaltungen/live.html?product_list_limit=25&p={page}")
+        response = requests.get(f"https://backstage.eu/veranstaltungen/live.html?product_list_limit={items_per_page}&p={page}")
         response.raise_for_status()
         tree = html.fromstring(response.content)
     except Exception as e:
